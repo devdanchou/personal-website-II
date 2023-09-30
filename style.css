@@ -156,8 +156,8 @@ section {
 
 .section-container {
   display: flex;
-  /* justify-content: center;
-  flex-direction: column; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
 }
 
 /* PROFILE SECTION */
@@ -295,7 +295,7 @@ cursor: pointer;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  width: 70%;
+  width: 90%;
 }
 
 .about-pic {
@@ -315,7 +315,7 @@ cursor: pointer;
   border-radius: 2rem;
   border: rgb(53, 53 ,53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: start;
 }
 
 .section-container {
@@ -336,10 +336,22 @@ cursor: pointer;
 }
 
 .experience-sub-title {
-  color: rgb(85,85, 85);
+  color: rgb(54,69, 79);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+}
+
+.experience-time {
+  color: rgb(83, 104, 120);
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+.experience-container {
+  margin-bottom: 0.5rem;
 }
 
 /* class for columns*/
