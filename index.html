@@ -39,25 +39,27 @@
     </div>
   </nav>
   <section id="profile">
-    <div class="section-pic-container">
-      <img src="./assets/Profile2.jpg" alt="Daniel Chou profile pic" class="section-profile-img">
+    <div class="profile-container">
+      <div class="section-pic-container">
+        <img src="./assets/Profile2.jpg" alt="Daniel Chou profile pic" class="section-profile-img">
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hi, I'm</p>
+        <h1 class="title">Daniel Chou!</h1>
+        <p class="section-text-p2">*Software Engineer* at Rithm</p>
+        <p class="section-text-p1">Full time dog dad.</p>
+        <br>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Daniel Chou - Resume 2022.pdf')">Resume</button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
+            onclick="window.open('https://www.linkedin.com/in/danielchou218/')">
+          <img src="./assets/github.png" alt="My github profile" class="icon"
+            onclick="window.open('https://github.com/devdanchou')">
+        </div>
     </div>
-    <div class="section-text">
-      <p class="section-text-p1">Hi, I'm</p>
-      <h1 class="title">Daniel Chou!</h1>
-      <p class="section-text-p2">*Software Engineer* at Rithm</p>
-      <p class="section-text-p1">Full time dog dad.</p>
-      <br>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Daniel Chou - Resume 2022.pdf')">Resume</button>
-        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
-          onclick="window.open('https://www.linkedin.com/in/danielchou218/')">
-        <img src="./assets/github.png" alt="My github profile" class="icon"
-          onclick="window.open('https://github.com/devdanchou')">
-      </div>
     </div>
   </section>
   <section id="about">
@@ -70,7 +72,7 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="exp-details-container">
               <!-- <img src="./assets/experience.png" alt="experience icon" class="icon"> -->
               <h3 class="experience-container">Experience</h3>
               <div class="experience-container">
@@ -84,7 +86,7 @@
                 <p>Lamont Financial Services Corporation</p>
               </div>
             </div>
-            <div class="details-container">
+            <div class="exp-details-container">
               <!-- <img src="./assets/education.png" alt="education icon" class="icon"> -->
               <h3 class="experience-container">Education</h3>
               <div class="experience-container">
@@ -136,12 +138,14 @@
           <img src="./assets/warbler.png" alt="Warbler Project" class="project-img">
         </div>
         <h2 class="experience-sub-title project-title">Warbler</h2>
+        <p>Warbler's a social media application inspired by Twitter, where users can follow other users and post/like messages.<br />
+          It was built using JavaScript, React, Python, HTML, CSS, Flask, and PostgreSQL.</p><br/>
         <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
-            Github
-          </button>
           <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
-            Live Demo
+            Explore
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
+            See Code
           </button>
         </div>
       </div>
@@ -151,11 +155,11 @@
         </div>
         <h2 class="experience-sub-title project-title">Jobly</h2>
         <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
-            Github
-          </button>
           <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
-            Live Demo
+            Explore
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
+            See Code
           </button>
         </div>
       </div>
@@ -166,7 +170,7 @@
         <h2 class="experience-sub-title project-title">Memory Game</h2>
         <div class="btn-container">
           <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/memory-game)">
-            Github
+            See Code
           </button>
           <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
             Live Demo

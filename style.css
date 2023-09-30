@@ -163,7 +163,6 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-  display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
@@ -171,14 +170,26 @@ section {
   background-size: cover;
   background-position: center;
   margin: 0;
+}
 
+.profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .section-pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 100%;
   margin: auto 0;
+  justify-content: center;
+}
+
+.section-pic-container img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 
 .section-profile-img {
@@ -308,14 +319,24 @@ cursor: pointer;
   bottom: 2.5rem;
 }
 
+.exp-details-container {
+  padding: 1.5rem;
+  /* flex: 1; */
+  background: white;
+  border-radius: 2rem;
+  /* border: rgb(53, 53 ,53) 0.1rem solid;
+  border-color: rgb(163, 163, 163); */
+  text-align: start;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
-  border-radius: 2rem;
+  /* border-radius: 2rem;
   border: rgb(53, 53 ,53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: start;
+  border-color: rgb(163, 163, 163); */
+  text-align: center;
 }
 
 .section-container {
