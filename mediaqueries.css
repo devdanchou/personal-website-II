@@ -1,7 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: auto;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -16,6 +15,7 @@
   }
   #experience, .experience-details-container {
     margin-top: 2rem;
+    margin-right: 0rem;
   }
   #profile, .section-container {
     display: block;
@@ -36,6 +36,7 @@
   }
   .about-containers {
     margin-top: 0;
+    justify-content: space-between;
   }
 
   .profile-container {
@@ -49,7 +50,8 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: auto;
+    width: 100%;
     margin-bottom: 0;
   }
   article {
