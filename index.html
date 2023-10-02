@@ -11,17 +11,26 @@
 </head>
 
 <body>
-  <nav id="desktop-nav">
-    <div class="logo">Daniel Chou</div>
-    <div>
+
+  <div class="nav-container">
+    <nav id="desktop-nav">
+      <!-- <div class="logo">
+        <a href="#home">Daniel Chou</a>
+      </div> -->
+      <div>
+        <ul class="name-logo-nav-links">
+          <li><img src="./assets/icons8-totoro-100.png" alt="totoro" class="nav-icon"></li>
+          <li class="logo"><a href="#home">Daniel Chou</a></li>
+        </ul>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
   <nav id="hamburger-nav">
     <div class="logo">Daniel Chou</div>
     <div class="hamburger-menu">
@@ -38,20 +47,21 @@
       </div>
     </div>
   </nav>
-  <section id="profile">
+  <section id="home">
     <div class="profile-container">
       <!-- <div class="section-pic-container">
         <img src="./assets/Profile2.jpg" alt="Daniel Chou profile pic" class="section-profile-img">
       </div> -->
       <div class="section-text">
-        <p class="section-text-p1">Hi, I'm</p>
+        <p class="section-text-p1 section-text-nav">Hi, I'm</p>
         <h1 class="title-emphasized">Daniel Chou!</h1>
-        <p class="section-text-p2">*Software Engineer* at Rithm</p>
-        <p class="section-text-p1">Full time dog dad.</p>
+        <p class="section-text-p2"> A software engineer with
+          a passion for<br>building functional and beautiful web applications.</p>
         <br>
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Daniel Chou - Resume 2022.pdf')">Resume</button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+          <button class="btn btn-color-2"
+            onclick="window.open('./assets/Daniel Chou - Resume 2023 .pdf')">Resume</button>
+          <button class="btn btn-color-2" onclick="location.href='#contact'">Contact</button>
         </div>
         <div id="socials-container">
           <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
@@ -59,15 +69,20 @@
           <img src="./assets/github.png" alt="My github profile" class="icon"
             onclick="window.open('https://github.com/devdanchou')">
         </div>
-    </div>
+      </div>
     </div>
   </section>
   <section id="about">
-    <div>
+    <!-- <div>
       <p class="section-text-p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-    </div>
+      <br>
+    </div> -->
     <div class="experience-details-container">
+      <div>
+        <p class="section-text-p1 section-text-container">Get To Know More</p>
+        <h1 class="title experience-container">About Me</h1>
+      </div>
       <div class="section-container">
         <div class="section-pic-container">
           <img src="./assets/Profile2.jpg" alt="Daniel Chou profile pic" class="section-profile-img">
@@ -83,7 +98,7 @@
                 <p>Rithm SIS</p>
               </div>
               <div class="experience-container">
-                <div class="experience-time">2021 - 2022</div>
+                <div class="experience-time">2021 - 2023</div>
                 <h4>Associate</h4>
                 <p>Lamont Financial Services Corporation</p>
               </div>
@@ -126,68 +141,81 @@
               embarking on the same path!
             </p>
           </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='#projects'">
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#projects'"> -->
   </section>
   <section id="projects">
-    <p class="section-text-p1">Browse My Recent</p>
+    <!-- <p class="section-text-p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
+    <br> -->
     <div class="experience-details-container">
+      <p class="section-text-p1 section-text-container">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
       <div class="about-containers">
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="./assets/warbler.png" alt="Warbler Project" class="project-img">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/warbler.png" alt="Warbler Project" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Warbler</h2>
+          <p>Warbler's a social media application inspired by X, formerly Twitter, where users can follow other users
+            and post/like messages.<br><br>
+            It was built using Python, HTML, CSS, Flask, and PostgreSQL.</p><br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
+              Explore
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
+              See Code
+            </button>
+          </div>
         </div>
-        <h2 class="experience-sub-title project-title">Warbler</h2>
-        <p>Warbler's a social media application inspired by Twitter, where users can follow other users and post/like messages.<br />
-          It was built using JavaScript, React, Python, HTML, CSS, Flask, and PostgreSQL.</p><br/>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/jobly-2.png" alt="Jobly Project" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Jobly</h2>
+          <p>Jobly's a single page React application, inspired by Linkedin, where users can view and submit job
+            applications.<br><br>
+            It was built using Express.js, React, and PostgreSQL.</p><br />
+          <p>(Not yet fully deployed.) </p>
+          <br>
+          <div class="btn-container">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
             Explore
-          </button>
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
-            See Code
-          </button>
+          </button> -->
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/devdanchou/jobly-react')">
+              See Code
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="./assets/jobly-2.png" alt="Jobly Project" class="project-img">
-        </div>
-        <h2 class="experience-sub-title project-title">Jobly</h2>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
-            Explore
-          </button>
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/warbler')">
-            See Code
-          </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="./assets/memory-game.png" alt="Memory Game Project" class="project-img">
-        </div>
-        <h2 class="experience-sub-title project-title">Memory Game</h2>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/devdanchou/memory-game)">
-            See Code
-          </button>
-          <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/memory-game.png" alt="Memory Game Project" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Memory</h2>
+          <p>Memory's an interactive classic card-matching memory game.<br><br>
+            It was built using HTML, CSS, and JavaScript.</p><br />
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/devdanchou/memory-game')">
+              See Code
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://the-warbler-8hh1.onrender.com/')">
             Live Demo
           </button> -->
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='#experience'">
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#experience'"> -->
   </section>
   <section id="experience">
-    <p class="section-text-p1">Explore My</p>
-    <h1 class="title">Experience</h1>
     <div class="experience-details-container">
+      <h1 class="title experience-header section-text-container">Experience</h1>
+      <p class="section-text-p1">Recent technologies I work with:</p>
       <div class="about-containers">
         <div class="details-container">
           <div class="article-container">
@@ -270,24 +298,42 @@
                 <h3>Python</h3>
               </div>
             </article>
+            <article>
+              <img src="./assets/jquery-logo.png" alt="Experience icon" class="icon">
+              <div>
+                <h3>jQuery</h3>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-    onclick="location.href='#contact'">
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#contact'"> -->
   </section>
   <section id="contact">
-    <p class="section-text-p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-        <p> <a href="mailto:daniel.cw.chou@gmail.com">daniel.cw.chou@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-        <p> <a href="https://www.linkedin.com/in/danielchou218/" target="_blank">LinkedIn</a></p>
-      </div>
+    <h1 class="contact-title">Contact Details</h1>
+    <div class="section-text-p3">
+      <p>Thanks for stopping by!</p>
+      <p> I'm looking to join a team of talented people who share the same passion
+        for creating innovative web solutions.</p>
+      <p>I'm currently seeking a full-time opportunity as a software engineer
+        in New York City.</p>
+      <br>
+      <p>Let's connect!</p>
+      <br>
+    </div>
+    <div>
+      <ul>
+        <li class="contact contact-info-container">
+          <img src="./assets/phone-icon.png" alt="phone icon" class="icon contact-icon">
+          <p> <a class="contact-info-font" href="tel:13472261999">347.226.1999</a></p></li>
+        <li class="contact contact-info-container">
+          <img src="./assets/email.png" alt="phone icon" class="icon contact-icon email-icon">
+          <p> <a class="contact-info-font"href="mailto:daniel.cw.chou@gmail.com">daniel.cw.chou@gmail.com</a></p></li>
+        <li class="contact contact-info-container">
+          <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+          <p> <a class="contact-info-font" href="https://www.linkedin.com/in/danielchou218/" target="_blank">LinkedIn</a></p></li>
+      </ul>
     </div>
   </section>
   <footer>
