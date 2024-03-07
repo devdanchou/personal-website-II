@@ -492,9 +492,11 @@ article .icon {
 }
 
 .project-img {
+  float: left;
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 350px;
+  height: 350px;
+  background-size: cover;
 }
 
 .project-title {
