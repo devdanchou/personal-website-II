@@ -5,6 +5,11 @@
   .about-containers {
     flex-wrap: wrap;
   }
+
+  .project-img {
+    max-width: 250px;
+    max-height: 250px;
+  }
 }
 @media screen and (max-width: 1200px) {
   #desktop-nav {
@@ -29,20 +34,33 @@
   section {
     margin: 0 5%
   }
+
   .section-pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    display: block;
   }
+
   .about-containers {
     margin-top: 0;
     justify-content: space-between;
   }
 
   .profile-container {
-    display: flex;
     flex-direction: column;
   }
+
+  .section-text-p1, title {
+    text-align: center;
+    display: block;
+  }
+
+  .project-img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -84,6 +102,7 @@
   .section-pic-container {
     width: auto;
     height: 45vw;
+    display: block;
     justify-content: center;
   }
   .section-text-p2 {
@@ -94,5 +113,10 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  .project-img {
+    max-width: 200px;
+    max-height: 200px;
   }
 }
